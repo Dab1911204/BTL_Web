@@ -1,0 +1,314 @@
+body {
+  font-family: "Helvetica Neue", "Open sans", sans-serif;
+  background-color: gray;
+  background-image: -webkit-linear-gradient(top left, rgba(0, 0, 0, 0.15), rgb(93, 93, 93, 0.15)),
+    url(https://img1.kienthucvui.vn/uploads/2019/10/30/anh-chup-rau-cu-qua_112150407.jpg);
+  color: white;
+  background-size: cover;
+
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px #fff4f4df;
+}
+
+form input {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  padding: 10px;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.429);
+  border-radius: 4px;
+  font-weight: 300;
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 4px;
+  margin: 20px 40px;
+  max-width: 350px;
+
+}
+
+.icon {
+  margin: 20px;
+  color: white;
+  display: flex;
+  font-size: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+input .input-field {
+  border: 1px solid black;
+}
+
+form input:hover,
+form input:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, .9);
+  border-radius: 5%;
+}
+
+form input::placeholder {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  margin-left: 10px;
+  opacity: 0.8;
+}
+
+input[type="submit"] {
+  margin: 40px auto;
+  border: 1px solid white;
+  display: block;
+  width: 150px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  border: 1px solid white;
+  display: block;
+  width: 150px;
+  opacity: 0.8;
+}
+
+.form-group p {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.form-group p a {
+  color: white;
+
+}
+
+/* Quản lý tin tức */
+.list {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  position: relative;
+}
+
+.list-header {
+  margin-left: 50px;
+}
+
+.list-left {
+  display: flex;
+  width: 80%;
+}
+
+.list-left img {
+  max-width: 180px;
+  min-width: 180px;
+  height: 110px;
+  object-fit: cover;
+  margin-right: 14px;
+  border-radius: 5px;
+}
+
+.list-category {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border: 1px solid #b0bec5;
+  color: #78909c;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.list-right {
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.list-info p {
+  margin-top: 7px;
+  flex-grow: 1;
+}
+
+.list-info h4 {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.list-note {
+  color: #0000008a;
+  font-size: 14px;
+  margin-right: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.list-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.list-old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #808080;
+  margin-right: 10px;
+}
+
+.list-current-price {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.list-control {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-detail,
+.btn-edit,
+.btn-delete {
+  background-color: #eee;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-left: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.list+.list {
+  margin-top: 10px;
+}
+
+.list-tool {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.btn-detail,
+.btn-edit {
+  outline: none;
+  background-color: #e5e5e5;
+  margin-right: 5px;
+}
+
+.btn-delete {
+  background-color: var(--red);
+  color: white;
+}
+
+.option-thongKe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  margin: 10px;
+}
+
+.thoiGianThongKe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.month {
+  margin-left: 10px;
+}
+
+.thoiGianThongKe select {
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 5px;
+}
+
+.header_ThongKe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tongLoiNhuan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.loinhuantheo {
+  display: flex;
+  flex-direction: row;
+}
+
+.header_chart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.khoangCach {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Đơn hàng*/
+
+.choxuly,
+.daxacnhan,
+.danggiao,
+.dagiao,
+.dahuy {
+  display: block;
+
+}
+
+.choxuly {
+  background-color: orange;
+}
+
+.daxacnhan {
+  background-color: yellowgreen;
+}
+
+.danggiao {
+  background-color: lightblue;
+}
+
+.dagiao {
+  background-color: green;
+}
+
+.dahuy {
+  background-color: red;
+}

@@ -1,0 +1,30 @@
+.no-spin-buttons::-webkit-inner-spin-button,
+.no-spin-buttons::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.no-spin-buttons {
+    -moz-appearance: textfield;
+    width: 30px;
+}
+/* Ẩn iframe để không ảnh hưởng tới giao diện */
+#hidden_iframe {
+    display: none;
+}
+.basket{
+    display: flex;
+    flex-direction: row;
+}
+.soluongdonhang{
+    display: block;
+    background-color: #fcd821;
+    color: #333;
+    border-radius: 100%;
+    width: 20px;
+    margin-left: 5px;
+}
+.style_icon{
+    line-height:22px;
+    margin-right: 5px;
+}   
